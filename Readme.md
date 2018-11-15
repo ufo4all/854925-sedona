@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Студеникин](https://up.htmlacademy.ru/htmlcss/23/user/854925).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Масленко](https://htmlacademy.ru/profile/biggus-dickus).
 
 ---
 
