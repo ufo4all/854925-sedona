@@ -5,14 +5,14 @@
 	<title>Отели</title>
 </head>
 <body>
-	<nav class="main-header-menu">
-			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и Видео</a></li>
-				<li><img src="sedona_logo_mini.png" alt="мини-логотип sedona" width="140" height="71"></li>
-				<li><a href="#">Карта штата</a></li>
-				<li class="main-header-menu-curent"><a href="hotels.html">Гостиницы</a></li>
-			</ul>			
+	<nav class="navbar">
+			<ul class="navbar-menu">
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="media.html">Фото и Видео</a></li>
+				<li><a href="satate-map.html">Карта штата</a></li>
+				<li class="navbar-menu-curent"><a>Гостиницы</a></li>
+			</ul>	
+			<a class="navbar-logo" href="index.html"><img src="sedona_logo.png" alt="логотип sedona" width="140" height="71"></a>
 		</nav>
 	<section class="hotels-filter">
 		<h4 class="visually-hidden">Фильтр по отелям</h4>
@@ -23,21 +23,25 @@
 		<b class="results-counter">Найдено:3</b>
 		<ul class="results-sort">
 			<li class="sort-curent"><a href="">По цене</a></li>
-			<li><a href="">По типу</a></li>
-			<li><a href="">По рейтингу</a></li>
+			<li><a href="#">По типу</a></li>
+			<li><a href="#">По рейтингу</a></li>
+		</ul>
+		<ul class="sort-order">
+			<li><a href="#"><img src="up-arrow.svg" alt="По возрастанию" width="1" height="1"></a></li>
+			<li><a href="#"><img src="down-arrow.svg" alt="По убыванию" width="1" height="1"></a></li>
 		</ul>
 	</section>
 	<section class="hotels-results-list">
-		<h4 class="visually-hidden">Список выбранных отелей</h4>
+		<h4 class="visually-hidden">Список найденных отелей</h4>
 		<ul class="results-list">
 			<li class="hotel-card">
 				<p><img src="Amara-Resort.jpg" alt="Amara Resort & Spa" width="140" height="90"></p>
 				<h3>Amara Resort and Spa</h3>	
 				<p class="hotel-category">Гостиница</p>
 				<p class="price-category">от 4000 р.</p>
-				<button class="button-more">Подробнее</button>
-				<button class="book">Забронировать</button>
-				<div class="stars"><img src="stars.png" alt="4 звезды"></div>
+				<a href="#" class="button-more">Подробнее</a>
+				<a href="#" class="button-book">Забронировать</a>
+				<p class="stars stars-4"><span class="visually-hidden">4 звезды</span></p>.
 				<b class="top">рейтинг: 8,5</b>
 			</li>
 			<li class="hotel-card">
@@ -45,9 +49,9 @@
 				<h3>Desert Quail Inn</h3>				
 				<p class="hotel-category">Мотель</p>
 				<p class="price-category">от 3000 р.</p>
-				<button class="button-more">Подробнее</button>
-				<button class="book">Забронировать</button>
-				<div class="stars"><img src="stars.png" alt="3 звезды"></div>
+				<a href="#" class="button-more">Подробнее</a>
+				<a href="#" class="button-book">Забронировать</a>
+				<p class="stars stars-3"><span class="visually-hidden">3 звезды</span></p>.
 				<b class="top">рейтинг: 8,9</b>
 			</li>
 			<li class="hotel-card">
@@ -55,26 +59,26 @@
 				<h2>Villas at Poco Diablo</h2>							
 				<p class="hotel-category">Апартаменты</p>
 				<p class="price-category">от 2000 р.</p>
-				<button class="button-more">Подробнее</button>
-				<button class="book">Забронировать</button>
-				<div class="stars"><img src="stars.png" alt="2 звезды"></div>
+				<a href="#" class="button-more">Подробнее</a>
+				<a href="#" class="button-book">Забронировать</a>
+				<p class="stars stars-2"><span class="visually-hidden">2 звезды</span></p>.
 				<b class="top">рейтинг: 9,2</b>
 			</li>				
-		</ul><br>
+		</ul>
 	</section>
 
 	<footer class="main-footer">
-		<b class="footer-hashtag">#visitsedona</b>
+		<a class="footer-hashtag" href="#">#visitsedona</a>
 		<div class="social">
 			<ul class="social-button">
-				<li class="twitter"><a href="#"><img src="twitter.png" alt="Иконка Твитер" width="47" height="50">Твитер</a></li>
-				<li class="facebook"><a href="#"><img src="facebook.png" alt="Иконка Фейсбук" width="47" height="50">Фейсбук</a></li>
-				<li class="youtube"><a href="#"><img src="youtube.png" alt="Иконка Ютьюб" width="47" height="50">Ютьюб</a></li>
+				<li class="twitter"><a href="#"><img src="twitter.png" alt="Иконка Твиттер" width="47" height="50"></a></li>
+				<li class="facebook"><a href="#"><img src="facebook.png" alt="Иконка Фейсбук" width="47" height="50"></a></li>
+				<li class="youtube"><a href="#"><img src="youtube.png" alt="Иконка Ютьюб" width="47" height="50"></a></li>
 			</ul>
 		</div>
 		<p class="footer-copyright">
 			<b class="copyright">website by</b>
-			<a href="https://htmlacademy.ru"><img src="academy-logo.png" alt="Логотип HTML Academy">HTML Academy</a>
+			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="academy-logo.png" alt="Логотип HTML Academy">HTML Academy</a>
 		</p>	
 	</footer>
 </body>

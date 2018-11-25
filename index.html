@@ -7,89 +7,77 @@
 <body>
 
 	<header class="main-header">
-		<nav class="main-header-menu">
-			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и Видео</a></li>
-				<li><img src="sedona_logo_mini.png" alt="мини-логотип sedona" width="140" height="71"></li>
-				<li><a href="#">Карта штата</a></li>
+		<nav class="navbar">
+			<ul class="navbar-menu">
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="media.html">Фото и Видео</a></li>
+				<li><a href="satate-map.html">Карта штата</a></li>
 				<li><a href="hotels.html">Гостиницы</a></li>
-			</ul>			
+			</ul>	
+			<a class="navbar-logo"><img src="sedona_logo.png" alt="логотип sedona" width="140" height="71"></a>
 		</nav>
-			<a class="main-header-logo">
-				<img src="sedona_logo.jpg" alt="логотип Sedona" >
-			</a>
-		<h1>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
+			<p class="header-greeting">
+				<span class="visually-hidden">Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!</span>
+			</p>
+		<h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 			<p class="5-facts">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 	</header>
 	<main class="container">
-		<section class="facts-about-sedona">
-			<h3 class="true-city">Настоящий<br>городок</h3>
-			<p class="№1-2">-№1-</p>
-			<p>Седона — не аттракцион для туристов,<br>там течёт своя жизнь</p>
+		<section class="about-items">
+			<h3 class="true-city">Настоящий городок</h3>
+			<p class="about-item-white">-№1-</p>
+			<p class="item-discription-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 			<img src="true-city.jpg" alt="Настоящий городок" width="800" height="258">
 		</section>
-		<section class="recomendation">
-			<h4 class="visually-hidden">Рекомендации - где остановиться в Седоне</h4>
-			<p class="recomendation-housing">
-				<img src="icon-1.png" alt="Иконка-1" width="75" height="80">
-				<span class="recomendation-category">Жильё</span>
-				<span class="recomendation-title">Рекомендуем пожить в настоящем мотеле,<br> всё как в кино!</span>
-			</p>
-		</section>
-		<section class="recomendation">
-			<h4 class="visually-hidden">Рекомендации - что поесть в Седоне</h4>
-			<p class="recomendation-eating">
-				<img src="icon-2.png" alt="Иконка-2" width="75" height="80">
-				<span class="recomendation-category">Жильё</span>
-				<span class="recomendation-title">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</span>
-			</p>
-		</section>
-		<section class="recomendation">
-			<h4 class="visually-hidden">Рекомендации - сувениры из Седоны</h4>
-			<p class="recomendation-souvenirs">
-				<img src="icon-3.png" alt="Иконка-3" width="75" height="80">
-				<span class="recomendation-category">Жильё</span>
-				<span class="recomendation-title">Не только китайского,<br> но и местного производства!</span>
-			</p>
-		</section>
-		<section class="facts-about-sedona">
+			<ul class="recomendation">
+				<li class="recomendation-item">
+					<h3 class="recomendation-category">Жильё</h3>
+					<p class="recomendation-title">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+				</li>
+				<li class="recomendation-item">
+					<h3 class="recomendation-category">Еда</h3>
+					<p class="recomendation-title">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				</li>
+				<li class="recomendation-item">
+					<h3 class="recomendation-category">Сувениры</h3>
+					<p class="recomendation-title">Не только китайского, но и местного производства!</p>
+				</li>
+			</ul>
+		<section class="about-items">
 			<img src="bridge.jpg" alt="Мост дьявола" width="800" height="258">
 			<h3 class="devil's-bridge">Там есть<br>Мост дьявола</h3>
-			<p class="№1-2">-№2-</p>
-			<p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+			<p class="about-item-white">-№2-</p>
+			<p class="item-discription-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 		</section>
-		<article class="facts-block">
-			<h4 class="visually-hidden">Еще несколько фактов о Седоне</h4>
-			<section class="little-square">
-				<h3>Небольшая<br>площадь</h3>
-				<p class="№3-5">-№3-</p>
-				<p class="facts-block-discription">Все достопримечательности<br>находятся очень близко</p>
-			</section>
-			<section class="beautiful-road">
-				<h3>Красивая<br>дорога</h3>
-				<p class="№3-5">-№4-</p>
-				<p class="facts-block-discription">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
-			</section>
-			<section class="few-tourists">
-				<h3>Мало<br>туристов</h3>
-				<p class="№3-5">-№5-</p>
-				<p class="facts-block-discription">Большинство едет в гранд каньон<br>и толпится там</p>
-			</section>
-		</article>
+			<ul class="about-block">
+				<li class="little-square">
+					<h3>Небольшая площадь</h3>
+					<p class="about-item-black">-№3-</p>
+					<p class="item-discription-black">Все достопримечательности находятся очень близко</p>	
+				</li>
+				<li class="beautiful-road">
+					<h3>Красивая дорога</h3>
+					<p class="about-item-black">-№4-</p>
+					<p class="item-discription-black">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</li>
+				<li class="few-tourists">
+					<h3>Мало туристов</h3>
+					<p class="about-item-balack">-№5-</p>
+					<p class="item-discription-black">Большинство едет в гранд каньон и толпится там</p>
+				</li>
+			</ul>
 		<section class="search-hotel">
 			<h2 class="search-title">Заинтересовались?</h2>
-			<p class="search-discription">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			<p class="search-discription">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			<button class="search-button"></button>
 			Здесь будет форма. 
-		</section>	<br>
+		</section>	 
 		<section class="map">
 			<h4 class="visually-hidden">Седона на карте</h4>
-			
 		</section>
 	</main>
 	<footer class="main-footer">
-		<b class="footer-hashtag">#visitsedona</b>
+		<a class="footer-hashtag" href="#">#visitsedona</a>
 		<div class="social">
 			<ul class="social-button">
 				<li class="twitter"><a href="#"><img src="twitter.png" alt="Иконка Твитер" width="47" height="50">Твитер</a></li>
@@ -99,7 +87,7 @@
 		</div>
 		<p class="footer-copyright">
 			<b class="copyright">website by</b>
-			<a href="https://htmlacademy.ru"><img src="academy-logo.png" alt="Логотип HTML Academy">HTML Academy</a>
+			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="academy-logo.png" alt="Логотип HTML Academy">HTML Academy</a>
 		</p>	
 	</footer>
 </body>
