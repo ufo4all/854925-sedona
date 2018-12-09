@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Отели</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<nav class="navbar">
@@ -19,7 +22,7 @@
 		<form class="filter">
 			<fieldset class="infrastructure">
 				<legend>Инфраструктура:</legend>
-				<ul role="none">
+				<ul role="none presentation">
 					<li>
 						<h2>Инфраструктура:</h2>
 					</li>
@@ -39,7 +42,7 @@
 			</fieldset>
 			<fieldset class="type-of-housing">
 				<legend>Тип жилья</legend>
-				<ul role="none">	
+				<ul role="none presentation">	
 					<li>
 						<h2>Тип жилья:</h2>
 					</li>
@@ -63,7 +66,7 @@
 					<div class="min-price">от<input type="text" name="min-price"></div>
 					<div class="max-price">до<input type="text" name="max-price"></div>
 					<div class="price-per-day">
-						<label class="visually-hidden">Стоимость в сутки <span area-label="в рублях">(р):</span></label>
+						<label class="visually-hidden">Стоимость в сутки <span aria-label="в рублях">(р):</span></label>
 						<input type="range" name="price-per-day" id="price" min="0" max="3000" step="100">
 					</div>
 				<button class="transparent" type="submit">Показать</button>	
@@ -122,9 +125,9 @@
 		<a class="footer-hashtag" href="#">#visitsedona</a>
 		<div class="social">
 			<ul class="social-button">
-				<li class="twitter"><a href="#"><img src="img/twitter.png" alt="иконка твиттер" width="47" height="50"></a></li>
-				<li class="facebook"><a href="#"><img src="img/facebook.png" alt="иконка фейсбук" width="47" height="50"></a></li>
-				<li class="youtube"><a href="#"><img src="img/youtube.png" alt="иконка ютьюб" width="47" height="50"></a></li>
+				<li class="twitter"><a href="#"><img src="img/twitter.svg" alt="иконка твиттер" width="47" height="50"></a></li>
+				<li class="facebook"><a href="#"><img src="img/facebook.svg" alt="иконка фейсбук" width="47" height="50"></a></li>
+				<li class="youtube"><a href="#"><img src="img/youtube.svg" alt="иконка ютьюб" width="47" height="50"></a></li>
 			</ul>
 		</div>
 		<p class="footer-copyright">
