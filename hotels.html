@@ -24,9 +24,6 @@
 				<legend>Инфраструктура:</legend>
 				<ul role="presentation">
 					<li>
-						<h2>Инфраструктура:</h2>
-					</li>
-					<li>
 						<label for="pool">Бассейн</label>
 						<input type="checkbox" name="pool" id="pool">
 					</li>
@@ -44,9 +41,6 @@
 				<legend>Тип жилья</legend>
 				<ul role="presentation">	
 					<li>
-						<h2>Тип жилья:</h2>
-					</li>
-					<li>
 						<label for="hotel">Гостиница</label>
 						<input type="checkbox" name="hotel" id="hotel">
 					</li>
@@ -61,12 +55,10 @@
 				</ul>
 			</fieldset>
 			<fieldset class="range">
-				<legend>Стоимость в сутки (р):</legend>
-					<h2>Стоимость в сутки (р):</h2>
-					<div class="min-price">от<input type="text" name="min-price"></div>
-					<div class="max-price">до<input type="text" name="max-price"></div>
+				<legend>Стоимость в сутки <span aria-label="в рублях">(р):</span></legend>
+					<label>от<input type="number" name="min-price"></label>
+					<label>до<input type="number" name="max-price"></label>
 					<div class="price-per-day">
-						<label class="visually-hidden">Стоимость в сутки <span aria-label="в рублях">(р):</span></label>
 						<input type="range" name="price-per-day" id="price" min="0" max="3000" step="100">
 					</div>
 				<button class="transparent" type="submit">Показать</button>	
@@ -75,7 +67,7 @@
 	</section>
 		<section class="filter-results">
 			<h4 class="visually-hidden">Результаты поиска по отелям</h4>
-			<b class="results-counter">Найдено:3</b>
+			<b class="results-counter">Найдено: 3</b>
 			<ul class="results-sort">
 				<li class="sort-curent"><a href="">По цене</a></li>
 				<li><a href="#">По типу</a></li>

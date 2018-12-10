@@ -74,25 +74,27 @@
 				<p class="search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				<a href="#booking-form" class="search-button">Поиск гостинницы в Седоне</a>
 			<form class="searche-form">
-				<ul>
-					<li>
-						<label for="arrive">Дата заезда:</label>
-						<input type="date" name="arrive" id="arrive" required>
-					</li>
-					<li>
-						<label for="departure">Дата выезда:</label>
-						<input type="date" name="departure" id="departure" required>
-					</li>
-					<li>
-						<label for="adults">Взрослые</label>
-						<input type="number" name="adults" id="adults" min="1" value="2">
-						<label for="kids">Дети</label>
-						<input type="number" name="kids" id="kids" min="0" value="0">
-					</li>
-					<li>
-						<button class="search-button">Найти</button>						
-					</li>
-				</ul>
+				<div>
+					<label for="arrive">Дата заезда:</label>
+					<input type="text" name="arrive" id="arrive" required>
+					<button class="celendar" type="button"><span class="visualy-hidden">Выбрать дату.</span></button>
+				</div>
+				<div>
+					<label for="departure">Дата выезда:</label>
+					<input type="text" name="departure" id="departure" required>
+					<button class="celendar" type="button"><span class="visualy-hidden">Выбрать дату.</span></button>
+				</div>
+				<div>
+					<label for="adults">Взрослые</label>
+					<button class="minus" type="button"><span class="visualy-hidden">Минус.</span></button>
+					<input type="number" name="adults" id="adults" min="1" value="2">
+					<button class="plus" type="button"><span class="visualy-hidden">Плюс.</span></button>
+					<label for="kids">Дети</label>
+					<button class="minus" type="button"><span class="visualy-hidden">Минус.</span></button>
+					<input type="number" name="kids" id="kids" min="0" value="0">
+					<button class="plus" type="button"><span class="visualy-hidden">Плюс.</span></button>
+				</div>
+					<button class="search-button" type="button">Найти</button>
 			</form>	
 		</section>	 
 		<section class="map">
