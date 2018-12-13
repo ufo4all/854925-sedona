@@ -10,6 +10,11 @@ body {
 	color: #000000;
 	text-transform: uppercase;
 }
+.container {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
 a {
 	text-decoration: none;
 }
@@ -20,7 +25,7 @@ h1 {
 	color: #000000;
 	line-height: 26px;
 	text-transform: uppercase;
-	margin-top: 50px;
+	margin: 0;
 }
 .visually-hidden {
 	position: absolute;
@@ -36,6 +41,7 @@ h1 {
   }
 .main-header {
 	background-color: #ffffff;
+	width: auto;
 }
 .navbar {
 	font-size: 14px;
@@ -45,19 +51,25 @@ h1 {
 .navbar-menu {
 	display: flex;
 	justify-content: space-between;
-	list-style: none;	
+	list-style: none;
+	padding-right: 72px;
+	padding-left: 72px;	
 }
 .navbar-menu a {
 	font-family: "PT Sans";
 	font-size: 14px;
 	font-weight: bold;
 	color: #000000;
+	text-decoration: none;
+}
+.media-item {
+	padding-right: 164px;
 }
 .navbar-logo {
 	position: absolute;
 	width: 138px;
-	height: 70px;
-	top: 0; right: 0; left: 0;
+	height: 50px;
+	right: 0; left: 0;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -74,36 +86,36 @@ a .navbar-menu-curent {
 .five-reason {
 	color: #333333;
 }
-.container {
-	width: 1200px;
-	margin: auto;
-	padding: auto;
-}
 .features {
 	display: flex;
-	justify-content: space-between;
-	background-color: #81b3d2;
-	text-align: center;
-	color: #ffffff;
-}
-.features-picture {
-	position: relative;
-	  overflow: hidden;
-	
+	justify-content: space-between;	
+	background-color: #ffffff;
 }
 .features-title h3 {
 	font-size: 21px;
 }
 .features-description {
-	width: 400px;
-	height: 256px;
+	width: auto;
+	height: 258px;
 	text-align: center;
+	color: #ffffff;
+	background-color: #81b3d2;
 }
+
+.features-picture {
+	position: relative;
+	overflow: hidden;
+}
+
+
 .recomendation {
 	display: flex;
 	justify-content: space-between;
+	width: auto;
 	list-style: none;
 	text-align: center;
+	background-color: #ffffff;
+	padding: 160px 18px 88px 27px;
 }
 .recomendation-title h3 {
 	font-size: 21px;
@@ -114,8 +126,10 @@ p.recomendation-description {
 .features-group {
 	display: flex;
 	justify-content: space-between;
+	width: auto;
 	background-color: #eeeeee;
 	list-style: none;
+	padding: 48px 78px 65px 95px;
 }
 .group-item-title h3 {
 	font-size: 21px;
@@ -123,11 +137,15 @@ p.recomendation-description {
 .features-group li {
 	text-align: center;
 }
+.features-group li:not(:last-child) {
+	padding-right: 165px;
+}
 p.group-item-number, 
 .group-item-description {
 	color: #333333;
 }
 .search-hotel {
+	width: auto;
 	text-align: center;
 	background-color: #ffffff;
 }
@@ -163,9 +181,14 @@ p.search-description {
 	background-color: #5496bd;
 	color: #94b9d2;
 }
+.map {
+	width: auto;
+}
 .main-footer {
 	display: flex;
 	justify-content: space-between;
+	width: 1200px;
+	
 	background-color: #ffffff;
 	color: #000000;	
 }
