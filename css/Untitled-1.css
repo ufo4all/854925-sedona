@@ -1,0 +1,46 @@
+.social-list {
+	display: flex;
+	padding-top: 36px;
+	list-style: none;	
+	font-size: 0;
+}
+.social-button {
+	position: relative;
+  	display: block;
+ 	width: 46px;
+	height: 48px;	
+	background-color: #81b3d2;
+}
+.social-button:not(:last-child) {
+	margin-right: 6px;
+}
+.social-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.twitter-button::before {
+	background-image: url("../img/twitter.svg");
+}
+  
+.facebook-button::before {
+	background-image: url("../img/facebook.svg");
+}
+  
+.youtube-button::before {
+	background-image: url("../img/youtube.svg");
+}
+.social-list li:hover {
+	background-color: #669ec0;
+}
+.social-list li:active {
+	background-color: #5496bd;
+}
+.social-button:active::before {
+	opacity: .3;
+}
