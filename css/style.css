@@ -325,8 +325,6 @@ label {
 	background-color: #5496bd;	
 }
 
-
-
 .modal-search {
 	position: relative;
 	background-color: #ffffff;
@@ -361,14 +359,17 @@ label {
 	padding-left: 10px;
   
 }
+
 .arrive input:focus,
 .departure input:focus {
 	border-color: #1c4f80;
 }
+
 .arrive label,
 .departure label {
 	margin-top: 10px;
 }
+
 .volume-people {
 	display: flex;
 	justify-content: space-between;
@@ -409,7 +410,6 @@ label {
     color: #a9a9a9;
     cursor: pointer;
 }
-
 
 .map {
 	max-height: 450px;
