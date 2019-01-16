@@ -5,8 +5,7 @@
 	<title>HTML Academy: Седона</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">	
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="http://yandex.st/jquery/1.9.1/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body>
 	<div class="container">
@@ -29,61 +28,90 @@
 		</div>
 	<main class="main-page">
 		<section class="features">
-		<div class="features-true-city">
-			<div class="features-title">
-				<h3>настоящий городок</h3>
+			<div class="features-description">
+				<h3>настоящий городок</h3>				
+				<span>-№1-</span>
+				<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 			</div>
-			<p class="features-number-white">-№1-</p>
-			<p class="features-discription-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-		</div>
-			<img class="features-picture" src="img/true-city.jpg" alt="настоящий городок" width="800" height="258">
+				<img class="features-picture" src="img/true-city.jpg" alt="настоящий городок" width="800" height="258">
 		</section>
 			<ul class="recomendation">
-				<li class="housing">
-					<h3 class="recomendation-title">жильё</h3>
-					<p class="recomendation-description">рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+				<li class="housing recomendation-item">
+					<h3>жильё</h3>
+					<p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 				</li>
-				<li class="food">
-					<h3 class="recomendation-title">еда</h3>
-					<p class="recomendation-description">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				<li class="food recomendation-item">
+					<h3>еда</h3>
+					<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</li>
-				<li class="gift">
-					<h3 class="recomendation-title">сувениры</h3>
-					<p class="recomendation-description">не только китайского, но и местного производства!</p>
+				<li class="gift recomendation-item">
+					<h3>сувениры</h3>
+					<p>не только китайского, но и местного производства!</p>
 				</li>
 			</ul>
 		<section class="features">			
 				<img class="features-picture" src="img/bridge.jpg" alt="мост дьявола" width="800" height="258">
-		<div class="features-evil-bridge">
-			<div class="features-title">
-				<h3>там есть<br>мост дьявола</h3>
+			<div class="features-description">			
+				<h3>там есть мост дьявола</h3>			
+				<span>-№2-</span>
+				<p>да, по нему можно пройти! если конечно вы осмелитесь</p>
 			</div>
-			<p class="features-number-white">-№2-</p>
-			<p class="features-discription-white">да, по нему можно пройти! если конечно вы осмелитесь</p>
-		</div>
 		</section>
 			<ul class="features-group">
-				<li>
-					<h3 class="group-item-title">небольшая площадь</h3>
-					<p class="group-item-number">-№3-</p>
-					<p class="group-item-description">все достопримечательности находятся очень близко</p>	
+				<li class="features-group-item">
+					<h3>небольшая площадь</h3>
+					<span>-№3-</span>
+					<p>все достопримечательности находятся очень близко</p>	
 				</li>
-				<li>
-					<h3 class="group-item-title">красивая дорога</h3>
-					<p class="group-item-number">-№4-</p>
-					<p class="group-item-description">ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				<li class="features-group-item">
+					<h3>красивая дорога</h3>
+					<span>-№4-</span>
+					<p>ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</li>
-				<li>
-					<h3 class="group-item-title">мало туристов</h3>
-					<p class="group-item-number">-№5-</p>
-					<p class="group-item-description">большинство едет в гранд каньон и толпится там</p>
+				<li class="features-group-item">
+					<h3>мало туристов</h3>
+					<span>-№5-</span>
+					<p>большинство едет в гранд каньон и толпится там</p>
 				</li>
 			</ul>
 		<section class="search-hotel">
 			<h2>заинтересовались?</h2>
 				<p class="search-description">укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-					<a href="#booking-form" class="search-popup-button">поиск гостинницы в Седоне</a>	
-		</section>	
+					<a href="form.html" class="search-popup-button">поиск гостинницы в Седоне</a>	
+		</section>
+		<form class="search-form popup-show" action="https://echo.htmlacademy.ru/" method="post">
+			<div class="arrive">
+				<label for="arrive">дата заезда:</label>
+				<input class="calendar" type="text" name="arrive" id="arrive" value="24 апреля 2017" required>
+			</div>
+			<div class="departure">
+				<label for="departure">дата выезда:</label>
+				<input class="calendar" type="text" name="departure" id="departure" value="4 июля 2017" required>
+			</div>
+			<div class="volume-people">
+				<div class="adults">
+					<label for="adults">взрослые</label>
+					<button class="minus" type="button">
+						-	
+					</button>									
+					<input type="text" name="adults" id="adults" min="1" value="2">
+					<button class="plus" type="button">
+						+	
+					</button>
+				</div>
+				<div class="kids">
+					<label for="kids">дети</label>
+					<button class="minus" type="button">
+						-	
+					</button>
+					<input type="text" name="kids" id="kids" min="0" value="0">
+					<button class="plus" type="button">
+						+	
+					</button>
+				</div>
+			</div>
+				<button class="search-button" type="submit">найти</button>				
+		</form>	
 		<section class="map">
 			<h4 class="visually-hidden">Седона на карте</h4>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d839723.8286893776!2d-111.90180777137249!3d34.70004215159724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1543400922683" width="1200" height="450" style="border:0" allowfullscreen></iframe>		
@@ -104,42 +132,7 @@
 			</a>
 		  </p>	
 	</footer>
-	<section class="modal-search">
-			<h2 class="visually-hidden">Форма поиска отеля</h2>
-			<form class="searche-form" action="https://echo.htmlacademy.ru/" method="post">
-				<div class="arrive">
-					<label for="arrive">дата заезда:</label>
-					<input class="calendar" type="text" name="arrive" id="arrive" value="24 апреля 2017" required>
-				</div>
-				<div class="departure">
-					<label for="departure">дата выезда:</label>
-					<input class="calendar" type="text" name="departure" id="departure" value="4 июля 2017" required>
-				</div>
-				<div class="volume-people">
-					<div class="adults">
-						<label for="adults">взрослые</label>
-						<button class="minus" type="submit">
-							-	
-						</button>									
-						<input type="number" name="adults" id="adults" min="1" value="2">
-						<button class="plus" type="button">
-							+	
-						</button>
-					</div>
-					<div class="kids">
-						<label for="kids">дети</label>
-						<button class="minus" type="button">
-							-	
-						</button>
-						<input type="number" name="kids" id="kids" min="0" value="0">
-						<button class="plus" type="button">
-							+	
-						</button>
-					</div>
-				</div>
-					<button class="search-button" type="submit">найти</button>				
-			</form>
-	</section>
-</div>
+	</div>
+	<script src="js/script.min.js"></script>
 </body>
 </html>
